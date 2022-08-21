@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r5j-1y-eLQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -11,7 +11,7 @@
         <!--Movie List View Controller-->
         <scene sceneID="9Ek-vs-PLp">
             <objects>
-                <viewController id="sVj-Wk-9Er" customClass="MovieListViewController" customModule="Denemee" sceneMemberID="viewController">
+                <viewController id="sVj-Wk-9Er" customClass="MovieListViewController" customModule="TVShowApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sft-I5-lq3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogoMovieCell" rowHeight="115" id="r6r-tC-3d7" customClass="LogoMovieCell" customModule="Denemee">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogoMovieCell" rowHeight="115" id="r6r-tC-3d7" customClass="LogoMovieCell" customModule="TVShowApp">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r6r-tC-3d7" id="gvg-UI-ihb">
@@ -43,7 +43,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="ZPo-am-NUj" customClass="MovieCell" customModule="Denemee" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="ZPo-am-NUj" customClass="MovieCell" customModule="TVShowApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="159.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZPo-am-NUj" id="air-RZ-bzb">
@@ -56,7 +56,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6K-dN-PDf" customClass="RatingView" customModule="Denemee" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6K-dN-PDf" customClass="RatingView" customModule="TVShowApp" customModuleProvider="target">
                                                     <rect key="frame" x="356" y="31" width="38" height="38"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
@@ -125,7 +125,7 @@
         <!--Movie Detail View Controller-->
         <scene sceneID="shL-EJ-3kv">
             <objects>
-                <viewController storyboardIdentifier="MovieDetailViewController" id="Slo-4d-2sj" customClass="MovieDetailViewController" customModule="Denemee" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieDetailViewController" id="Slo-4d-2sj" customClass="MovieDetailViewController" customModule="TVShowApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGc-7Q-XzD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
