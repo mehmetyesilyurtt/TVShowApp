@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  iOS_TheMovieDB
-//
-//  Copyright © 2021 PhucBui. All rights reserved.
-//
 
 import UIKit
 
@@ -165,11 +159,7 @@ extension MovieListViewController : UITableViewDataSource {
             for: indexPath) as! LogoMovieCell
             return cell
        
-            
 
-         
-                                                                  
-            
         case 2:
             
             let cell:MovieCell = tableView.dequeueReusableCell(withIdentifier: MovieCell.identifier,
