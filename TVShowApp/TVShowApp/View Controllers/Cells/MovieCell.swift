@@ -16,8 +16,9 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var rating: RatingView!
     @IBOutlet weak var releaseDate: UILabel!
     @IBOutlet weak var poster: UIImageView!
+    @IBOutlet weak var favButton: UIButton!
     
-   
+    private var myID = -1
     private struct Constants {
       
         struct Keys {
@@ -49,6 +50,17 @@ class MovieCell: UITableViewCell {
         title.text = movieDictionary[Constants.Keys.titleMovie] as? String ?? ""
         releaseDate.text = ""
          
+        let movieId = movieDictionary["id"] as? Int ?? 1
+        print(movieId)
+        myID = movieId
+        if(IsExistInFavorites(movieId: movieId)){
+            favButton.setImage(UIImage(named: "favFilled"), for: .normal)
+        }else {
+            favButton.setImage(UIImage(named: "favEmpty"), for: .normal)
+
+        }
+            
+        
         let voteAverage : Double = movieDictionary[Constants.Keys.voteAverage] as? Double ?? 0
         rating.updateCirclePercentage(percent: voteAverage)
         
@@ -68,6 +80,7 @@ class MovieCell: UITableViewCell {
     
     // Private functions
     
+ 
     private func configureReleaseDate(movieDictionary: [String: Any]) {
        
         let releaseDateString = movieDictionary[Constants.Keys.releaseDate] as? String ?? ""
@@ -83,10 +96,18 @@ class MovieCell: UITableViewCell {
         let movieRunTime = movieDictionary[Constants.Keys.runTime] as? Int ?? 0
         let (hour, minutes) = minutesToHours(minutes: movieRunTime)
         let runtimeString = "\(hour)h \(minutes)m"
-        
         releaseDate.text = movieReleaseDate + " - " + runtimeString
     }
     
+    @IBAction func favClicked(_ sender: Any) {
+        if(IsExistInFavorites(movieId: myID)){
+            RemoveFromFavorites(movieId: myID)
+            favButton.setImage(UIImage(named: "favEmpty"), for: .normal)
+        }else{
+            favButton.setImage(UIImage(named: "favFilled"), for: .normal)
+            AddToFavorites(movieId: myID)
+        }
+    }
     private func minutesToHours (minutes : Int) -> (Int, Int) {
       return (minutes / 60, (minutes % 60))
     }

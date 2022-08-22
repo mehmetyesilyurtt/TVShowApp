@@ -50,6 +50,9 @@ class MovieListViewController: UIViewController {
         configureUI()
         
         loadData()
+        
+        InitSaveData()
+    
     }
     
     //Private functions

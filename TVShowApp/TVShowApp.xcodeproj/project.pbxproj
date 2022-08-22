@@ -26,6 +26,7 @@
 		6D4075AA28B2E96100C7B1CC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4075A728B2E96100C7B1CC /* PhotoCollectionViewCell.swift */; };
 		6D4075AD28B2E9D700C7B1CC /* StringExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4075AC28B2E9D700C7B1CC /* StringExtentions.swift */; };
 		6D4075B028B2E9DD00C7B1CC /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4075AF28B2E9DD00C7B1CC /* RatingView.swift */; };
+		6D4075BE28B3AA0300C7B1CC /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4075BD28B3AA0300C7B1CC /* SaveData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		6D4075A728B2E96100C7B1CC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D4075AC28B2E9D700C7B1CC /* StringExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtentions.swift; sourceTree = "<group>"; };
 		6D4075AF28B2E9DD00C7B1CC /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		6D4075BD28B3AA0300C7B1CC /* SaveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		6D40757728B2DD6A00C7B1CC /* TVShowApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D4075BC28B3AA0300C7B1CC /* SaveData */,
 				6D4075AE28B2E9DD00C7B1CC /* Custom */,
 				6D4075AB28B2E9D700C7B1CC /* Extentions */,
 				6D40759B28B2E0D400C7B1CC /* Services */,
@@ -178,6 +181,15 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
+		6D4075BC28B3AA0300C7B1CC /* SaveData */ = {
+			isa = PBXGroup;
+			children = (
+				6D4075BD28B3AA0300C7B1CC /* SaveData.swift */,
+			);
+			name = SaveData;
+			path = ../../../../Desktop/Denemee/Denemee/SaveData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4075BE28B3AA0300C7B1CC /* SaveData.swift in Sources */,
 				6D40757928B2DD6A00C7B1CC /* AppDelegate.swift in Sources */,
 				6D4075AD28B2E9D700C7B1CC /* StringExtentions.swift in Sources */,
 				6D4075A928B2E96100C7B1CC /* PhotosViewController.swift in Sources */,
