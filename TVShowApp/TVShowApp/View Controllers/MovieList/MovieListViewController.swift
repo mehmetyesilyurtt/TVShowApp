@@ -38,7 +38,7 @@ class MovieListViewController: UIViewController {
     // Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+ 
         viewModel = MovieViewModelImpl(popularService: MoviePopularServiceImpl(), movieDetailService: MovieDetailServiceImpl())
         
         configureUI()
@@ -46,7 +46,17 @@ class MovieListViewController: UIViewController {
         loadData()
         
         InitSaveData()
+        
+        createTimer()
     
+    }
+    func createTimer(){
+        let timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+    }
+    @objc func fireTimer (){
+    
+        loadData()
+
     }
     
     //Private functions
