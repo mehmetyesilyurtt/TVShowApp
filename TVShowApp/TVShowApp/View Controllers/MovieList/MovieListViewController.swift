@@ -51,7 +51,7 @@ class MovieListViewController: UIViewController {
     
     }
     func createTimer(){
-        let timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     @objc func fireTimer (){
     
